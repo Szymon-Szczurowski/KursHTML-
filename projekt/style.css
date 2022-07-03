@@ -23,3 +23,7 @@ p {
 span {
     background-color: tomato;
 }
+
+ul{
+    padding-inline-start: 50px;
+}
