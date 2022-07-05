@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.padding {
+	padding: 80px 40px 15px 5px;
+}
+.padding2 {
+	padding: 10px;
+}
+.margin {
+	margin: 20px 30px 40px 30px;
+}
+.margin2 {
+	margin: 100px 50px 100px 50px;
+}
+.padding3 {
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+}
+.padding4 {
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+}
+.margin3 {
+	margin-top: 20px;
+}
+.padding5 {
+	padding-top: 20px;
+	padding-right: 40px;
+}
