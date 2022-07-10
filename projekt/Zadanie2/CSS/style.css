@@ -42,6 +42,6 @@ body {
 	background-color: green;
 }
 
-.first:hover ~ .child {
+.first:hover ~  {
 	background-color: gold;
 }
