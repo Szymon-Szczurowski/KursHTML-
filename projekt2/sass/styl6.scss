@@ -38,3 +38,11 @@ p {
     height: 150px;
     background-color: royalblue;
 }
+
+// [href='apple.com'] {
+//     color: gold;
+// }
+
+p[class*'test']{
+    color: gold;
+}
