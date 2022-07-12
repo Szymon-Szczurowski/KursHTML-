@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 25px;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 20px 20px;
+  color: #ddd;
+}
+
+li:nth-child(even) {
+  color: lime;
+}
+
+span:first-of-type {
+  color: gold;
+}
+
+.test p:first-child,
+.test p:last-child {
+  color: tomato;
+}
+
+.title {
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.title:hover {
+  color: royalblue;
+}/*# sourceMappingURL=style5.css.map */
