@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	color: #fff;
+	background-color: #333;
+}
+
+.square {
+	width: 400px;
+	height: 400px;
+	background-color: gold;
+    border: 3px solid black;
+    animation: color 5s ease-in 2s 3;
+    animation-direction: reversce;
+}
+
+
+.square:hover{
+    animation-play-state: running;
+    animation-play-state: paused;
+}
+
+@keyframes color {
+    0%{
+        width: 300px;
+        background-color: goldenrod;
+    }
+
+    50%{
+        width: 800px;
+        background-color: royalblue;
+    }
+
+    100%{
+        width: 200px;
+        background-color: lime;
+    }
+}
+
