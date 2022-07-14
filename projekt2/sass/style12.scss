@@ -59,4 +59,8 @@ section {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+   
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
 }
