@@ -7,7 +7,7 @@ const userName = 'Szymon'
 
 
 //Można też deklarować puste zmienne np.
-let age
+//let age
 
 console.log(age); //wywołanie w konsoli color
 
