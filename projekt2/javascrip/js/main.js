@@ -16,3 +16,13 @@ console.log('Cześć mam na imię ' + userName + ' mam ' + age + ' lat i mój ul
 
 console.log(`Cześć, mam na imię ${userName}, mam ${age} lat i mój ulubiony koor to ${color}`)
 //Nowszy i lepszy zapis
+
+const passLength = 10
+
+if (passLength > 10){
+    console.log(`masz bardzo dobre hasło`);
+}else if (passLength >= 5 && passLength <= 10) {
+    console.log(`Masz dobre haslo`);
+}else {3
+    console.log(`Masz słabe hasło`);
+}

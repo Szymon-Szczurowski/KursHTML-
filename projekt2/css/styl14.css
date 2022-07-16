@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+}
+
+ul {
+  padding: 10px;
+}/*# sourceMappingURL=styl14.css.map */
