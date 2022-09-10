@@ -12,8 +12,13 @@ body {
   background-color: #444;
 }
 
+.blue-text {
+  color: #039dff;
+}
+
 nav {
   text-transform: uppercase;
+  z-index: 1;
 }
 nav a,
 nav i {
@@ -40,7 +45,11 @@ header {
   color: #fff;
 }
 header h1 {
+  font-size: 30px;
   text-transform: uppercase;
+}
+header p {
+  font-size: 14px;
 }
 header .hero-img {
   position: relative;
@@ -49,12 +58,14 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 0;
 }
 header .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
 }
 header .hero-text {
   display: flex;
@@ -62,4 +73,40 @@ header .hero-text {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 5;
+}
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-style: 30px;
+  bottom: 20px;
+  color: #fff;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("/projekt2/strona/img/playstation-1845880_1920.jpg");
+  }
 }/*# sourceMappingURL=style.css.map */
