@@ -7,6 +7,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 82px;
+}
 
 body {
 	position: relative;
@@ -14,12 +17,27 @@ body {
 	background-color: #444;
 }
 
-.blue-text {
-	color: $blue-color;
+h2 {
+	text-align: center;
+	text-transform: uppercase;
 }
 
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+}
+.blue-text {
+	color: $main-color;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
 nav {
 	text-transform: uppercase;
+	transition: background-color 0.6s;
 	z-index: 1;
 
 	a,
@@ -28,7 +46,7 @@ nav {
 	}
 
 	a:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 
 	.fa-bars {
@@ -40,12 +58,12 @@ nav {
 	}
 
 	.active {
-		color: $blue-color;
+		color: $main-color;
 	}
 }
 
 .second-name {
-	color: $blue-color;
+	color: $main-color;
 }
 
 header {
@@ -98,6 +116,27 @@ header {
 	}
 }
 
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -118,6 +157,12 @@ header {
 		}
 	}
 }
+@media (min-width: 992px) {
+	html {
+        scroll-padding-top: 72px;
+	}
+}
+
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
