@@ -6,4 +6,26 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #444;
+    position: relative;
+}
+
+nav {
+    text-transform: uppercase;
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-link:hover {
+        color: #039dff;
+    }
+    .navbar-brand{
+        font-weight: bold;
+        color: #fff;
+    }
+    .navbar-brand:hover{
+        color: #039dff;
+    }
+    .active{
+        color: #039dff;
+    }
 }
