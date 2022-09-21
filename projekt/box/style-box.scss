@@ -1,91 +1,150 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+	.header-img {
+		position: relative;
+		height: 300px;
+		background-image: url('/projekt/box/img/mountains-190055_640.jpg');
+		background-size: cover;
+		background-position: 0 50%;
+
+		.header-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			z-index: 1;
+
+			h1 {
+				font-size: 50px;
+				padding-bottom: 10px;
+				letter-spacing: 2px;
+				font-weight: bold;
+			}
+			p {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+		}
+
+		.header-bg {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 3, 27, 0.4);
+		}
+	}
+}
+
+.nav {
+	height: 50px;
 	background-color: #333;
-	font-size: 36px;
+	text-align: center;
+	line-height: 50px;
+
+	.nav-item {
+		display: inline-block;
+
+		a {
+			padding: 0 50px;
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: bold;
+			letter-spacing: 2px;
+			transition: color 0.3s;
+		}
+
+		a:hover {
+			color: royalblue;
+		}
+	}
 }
 
-button {
-	position: absolute;
-	top: 50px;
-	width: 120px;
-	padding: 10px 30px;
-	background: none;
-	color: white;
-	font-weight: bold;
-	border: 3px solid white;
-	border-radius: 5px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	cursor: pointer;
-	transform: translate(-50%);
-	transition: color 1s;
+.main {
+	margin: 50px auto;
+	width: 1200px;
+
+	text-align: center;
+	h2 {
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.main-img {
+		position: relative;
+		margin: 40px 0;
+		height: 300px;
+		background-attachment: fixed;
+		background-position: center;
+		border-top-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+		overflow: hidden;
+
+		.main-bg {
+			position: absolute;
+			bottom: 0;
+			height: 45%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+
+			.main-text {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+			}
+		}
+	}
+
+	.one {
+		background-image: url('/projekt/Zadanie/img/kawa.jpg');
+	}
+
+	.two {
+		background-image: url('/projekt/Zadanie/img/urząd.jpg');
+	}
+	.three {
+		background-image: url('/projekt/Zadanie/img/telefon.jpg');
+	}
 }
 
-button:hover {
-	background-color: white;
-	color: black;
-}
+.footer {
+	position: relative;
+	height: 70px;
+	background-color: #333;
 
-.btn-zoom {
-	left: 30%;
-}
-.btn-move {
-	left: 50%;
-}
+	p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		font-size: 20px;
 
-.btn-color {
-	left: 70%;
-}
-.square {
-	position: absolute;
-	top: 150px;
-	width: 100px;
-	height: 100px;
-	border-radius: 25px;
-	transform: translate(-50%);
-	transition: .3s;
-}
-
-.blue {
-	background-color: royalblue;
-	left: 30%;
-	box-shadow: 0 0 15px royalblue;
-	border: 2px solid darkblue;
-}
-
-.red {
-	background-color: red;
-	left: 50%;
-	box-shadow: 0 0 15px red;
-	border: 2px solid darkred;
-}
-
-.green {
-	background-color: green;
-	left: 70%;
-	box-shadow: 0 0 15px green;
-	border: 2px solid darkgreen;
-}
-
-.btn-zoom:hover ~ .square {
-	width: 200px;
-	height: 200px;
-}
-
-.btn-move:hover ~ .square {
-    top: 400px;
-}
-
-.btn-color:hover ~ .square{
-    background-color: black;
-    border: 2px solid white;
-    box-shadow: 0 0 15px black;
-
+		.icon-box {
+			a {
+				color: #fff;
+				margin: 0 5px;
+				font-size: 30px;
+				transition: color 0.5;
+			}
+			a:hover {
+				color: royalblue;
+			}
+		}
+	}
 }

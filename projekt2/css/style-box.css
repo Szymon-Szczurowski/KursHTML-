@@ -1,92 +1,133 @@
+@charset "UTF-8";
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #333;
-  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
 }
 
-button {
+.header .header-img {
+  position: relative;
+  height: 300px;
+  background-image: url("/projekt/box/img/mountains-190055_640.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+}
+.header .header-img .header-text {
   position: absolute;
-  top: 50px;
-  width: 120px;
-  padding: 10px 30px;
-  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-weight: bold;
-  border: 3px solid white;
-  border-radius: 5px;
+  z-index: 1;
+}
+.header .header-img .header-text h1 {
+  font-size: 50px;
+  padding-bottom: 10px;
   letter-spacing: 2px;
+  font-weight: bold;
+}
+.header .header-img .header-text p {
   text-transform: uppercase;
-  cursor: pointer;
-  transform: translate(-50%);
-  transition: color 1s;
+  letter-spacing: 2px;
 }
-
-button:hover {
-  background-color: white;
-  color: black;
-}
-
-.btn-zoom {
-  left: 30%;
-}
-
-.btn-move {
-  left: 50%;
-}
-
-.btn-color {
-  left: 70%;
-}
-
-.square {
+.header .header-img .header-bg {
   position: absolute;
-  top: 150px;
-  width: 100px;
-  height: 100px;
-  border-radius: 25px;
-  transform: translate(-50%);
-  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 3, 27, 0.4);
 }
 
-.blue {
-  background-color: royalblue;
-  left: 30%;
-  box-shadow: 0 0 15px royalblue;
-  border: 2px solid darkblue;
+.nav {
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+  line-height: 50px;
+}
+.nav .nav-item {
+  display: inline-block;
+}
+.nav .nav-item a {
+  padding: 0 50px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+.nav .nav-item a:hover {
+  color: royalblue;
 }
 
-.red {
-  background-color: red;
+.main {
+  margin: 50px auto;
+  width: 1200px;
+  text-align: center;
+}
+.main h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .main-img {
+  position: relative;
+  margin: 40px 0;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.main .main-img .main-bg {
+  position: absolute;
+  bottom: 0;
+  height: 45%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main .main-img .main-bg .main-text {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  box-shadow: 0 0 15px red;
-  border: 2px solid darkred;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.main .one {
+  background-image: url("/projekt/Zadanie/img/kawa.jpg");
+}
+.main .two {
+  background-image: url("/projekt/Zadanie/img/urząd.jpg");
+}
+.main .three {
+  background-image: url("/projekt/Zadanie/img/telefon.jpg");
 }
 
-.green {
-  background-color: green;
-  left: 70%;
-  box-shadow: 0 0 15px green;
-  border: 2px solid darkgreen;
+.footer {
+  position: relative;
+  height: 70px;
+  background-color: #333;
 }
-
-.btn-zoom:hover ~ .square {
-  width: 200px;
-  height: 200px;
+.footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
 }
-
-.btn-move:hover ~ .square {
-  top: 400px;
+.footer p .icon-box a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 30px;
+  transition: color 0.5;
 }
-
-.btn-color:hover ~ .square {
-  background-color: black;
-  border: 2px solid white;
-  box-shadow: 0 0 15px black;
+.footer p .icon-box a:hover {
+  color: royalblue;
 }/*# sourceMappingURL=style-box.css.map */
