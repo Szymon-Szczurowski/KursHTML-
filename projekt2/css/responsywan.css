@@ -7,12 +7,7 @@
 }
 
 body {
-  scroll-margin-top: 60px;
-  font-family: "Montserrat", sans-serif;
-}
-
-section {
-  scroll-margin-top: 80px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -21,119 +16,103 @@ section {
   max-width: 1200px;
 }
 
-.nav {
-  position: -webkit-sticky;
-  position: sticky;
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
   height: 60px;
   background-color: #ddd;
-  line-height: 60px;
   text-align: center;
-  top: 0;
-  z-index: 20;
 }
-.nav .burger-icon {
+nav .burger-icon {
   display: block;
+  padding: 0 20px;
   margin-left: auto;
-  padding: 0 30px;
-  font-size: 30px;
   line-height: 60px;
   background: none;
   border: none;
-  cursor: pointer;
+  font-size: 30px;
   transition: color 0.3s;
+  cursor: pointer;
 }
-.nav .burger-icon:hover {
+nav .burger-icon:hover {
   color: royalblue;
 }
-.nav .nav-item {
+nav .nav-item {
   display: none;
 }
-.nav .nav-item .nav-link {
-  color: #333;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0 30px;
-  transition: color 0.3s;
-  text-decoration: none;
-}
-.nav .nav-item .nav-link:hover {
-  color: royalblue;
-}
 
-.header .header-img {
+header .header-img {
   position: relative;
-  height: 490px;
+  height: 400px;
   background-image: url("/projekt/responsywna/img/landscape-small.jpg");
   background-position: center;
   background-size: cover;
 }
-.header .header-img .header-text {
+header .header-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
+  transform: translate(-50%, -50%);
   font-size: 22px;
 }
-.header .header-img .header-text h1 {
+header .header-text h1 {
   text-shadow: 3px 3px 5px #000;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
-.header .header-img .header-text h1 span {
-  font-weight: bold;
-  color: #09f;
+header .header-text h1 span {
   text-transform: uppercase;
+  color: #09f;
+}
+header .header-text p {
   letter-spacing: 2px;
 }
-.header .header-img .header-shadow {
+header .header-shadow {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
 
-.section-title {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
+main .about-us {
+  margin: 40px auto;
 }
-
-.products {
-  margin: 60px auto;
+main .about-us p {
+  padding-bottom: 10px;
 }
-.products .products-box .main-img {
+main .product .hero-bg {
   position: relative;
   height: 300px;
   background-size: cover;
   background-position: center;
   text-align: center;
 }
-.products .products-box .one {
+main .product .first-product {
   background-image: url("/projekt/responsywna/img/chilidren-small.jpg");
 }
-.products .products-box .two {
-  background-image: url("/projekt/responsywna/img/keyboard-small.jpg");
-}
-.products .products-box .three {
-  background-image: url("/projekt/responsywna/img/laptop-small.jpg");
-}
-.products .products-box .four {
+main .product .second-product {
   background-image: url("/projekt/responsywna/img/woman-small.jpg");
 }
 
-.main {
-  margin: 60px 0;
-}
-.main .about-us p {
-  margin-bottom: 10px;
-  padding: 0 20px;
-}
-
 @media (min-width: 768px) {
-  .nav .burger-icon {
+  nav .burger-icon {
     display: none;
   }
-  .nav .nav-item {
+  nav .nav-item {
     display: block;
+  }
+  nav a {
+    padding: 0 40px;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: royalblue;
   }
 }/*# sourceMappingURL=responsywan.css.map */
