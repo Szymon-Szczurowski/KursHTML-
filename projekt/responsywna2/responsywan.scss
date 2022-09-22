@@ -1,36 +1,63 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
 body {
+	scroll-margin-top: 60px;
+
 	font-family: 'Montserrat', sans-serif;
+}
+section {
+	scroll-margin-top: 80px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
 .nav {
-	position: relative;
+	position: sticky;
 	height: 60px;
-	background-color: rgb(216, 215, 215);
+	background-color: #ddd;
+	line-height: 60px;
+	text-align: center;
+	top: 0;
+	z-index: 20;
 
-	.nav-link {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+	.burger-icon {
+		display: block;
+		margin-left: auto;
+		padding: 0 30px;
+		font-size: 30px;
+		line-height: 60px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		transition: color 0.3s;
+	}
 
-		a {
-			margin: 0 20px;
-			font-weight: bold;
-			font-size: 20px;
+	.burger-icon:hover {
+		color: royalblue;
+	}
+
+	.nav-item {
+		display: none;
+		.nav-link {
 			color: #333;
-			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 0 30px;
 			transition: color 0.3s;
+			text-decoration: none;
 		}
 
-		a:hover {
+		.nav-link:hover {
 			color: royalblue;
 		}
 	}
@@ -38,9 +65,97 @@ body {
 
 .header {
 	.header-img {
-		height: 330px;
+		position: relative;
+		height: 490px;
 		background-image: url('/projekt/responsywna/img/landscape-small.jpg');
+		background-position: center;
+		background-size: cover;
+
+		.header-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 22px;
+
+			h1 {
+				text-shadow: 3px 3px 5px #000;
+				margin-bottom: 5px;
+
+				span {
+					font-weight: bold;
+					color: #09f;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+			}
+		}
+
+		.header-shadow {
+			height: 100%;
+			background: rgba(0, 0, 0, 0.6);
+		}
+	}
+}
+
+.section-title {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+
+.products {
+	margin: 60px auto;
+	.products-box{
+		
+	.main-img {
+		position: relative;
+		height: 300px;
 		background-size: cover;
 		background-position: center;
+		text-align: center;
+	}
+
+	.one {
+		background-image: url('/projekt/responsywna/img/chilidren-small.jpg');
+	}
+
+	.two {
+		background-image: url('/projekt/responsywna/img/keyboard-small.jpg');
+	}
+
+	.three {
+		background-image: url('/projekt/responsywna/img/laptop-small.jpg');
+	}
+
+	.four {
+		background-image: url('/projekt/responsywna/img/woman-small.jpg');
+	}
+}
+}
+
+.main {
+	margin: 60px 0;
+
+	.about-us {
+		p {
+			margin-bottom: 10px;
+			padding: 0 20px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		.burger-icon {
+			display: none;
+		}
+
+		.nav-item {
+			display: block;
+		}
 	}
 }
