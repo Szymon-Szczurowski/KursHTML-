@@ -103,8 +103,10 @@ main{
 		}
 	}
 
-	.product{
-		.hero-bg{
+	.products{
+		margin: 60px auto;
+
+		.product{
 			position: relative;
 			height: 300px;
 			background-size: cover;
@@ -119,6 +121,14 @@ main{
 		.second-product{
 			background-image: url('/projekt/responsywna/img/woman-small.jpg');
 
+		}
+
+		.third-product{
+			background-image: url('/projekt/responsywna/img/keyboard-small.jpg');
+		}
+
+		.fourth-product{
+			background-image: url('/projekt/responsywna/img/laptop-small.jpg');
 		}
 	}
 }

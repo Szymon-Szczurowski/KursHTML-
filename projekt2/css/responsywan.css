@@ -82,18 +82,27 @@ main .about-us {
 main .about-us p {
   padding-bottom: 10px;
 }
-main .product .hero-bg {
+main .products {
+  margin: 60px auto;
+}
+main .products .product {
   position: relative;
   height: 300px;
   background-size: cover;
   background-position: center;
   text-align: center;
 }
-main .product .first-product {
+main .products .first-product {
   background-image: url("/projekt/responsywna/img/chilidren-small.jpg");
 }
-main .product .second-product {
+main .products .second-product {
   background-image: url("/projekt/responsywna/img/woman-small.jpg");
+}
+main .products .third-product {
+  background-image: url("/projekt/responsywna/img/keyboard-small.jpg");
+}
+main .products .fourth-product {
+  background-image: url("/projekt/responsywna/img/laptop-small.jpg");
 }
 
 @media (min-width: 768px) {
