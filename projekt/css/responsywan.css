@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  height: 60px;
+  background-color: #ddd;
+  text-align: center;
+}
+nav .burger-icon {
+  display: block;
+  padding: 0 20px;
+  margin-left: auto;
+  line-height: 60px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+nav .burger-icon:hover {
+  color: royalblue;
+}
+nav .nav-item {
+  display: none;
+}
+
+header .header-img {
+  position: relative;
+  height: 400px;
+  background-image: url("/projekt/responsywna/img/landscape-small.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header .header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+header .header-text h1 {
+  text-shadow: 3px 3px 5px #000;
+  margin-bottom: 10px;
+}
+header .header-text h1 span {
+  text-transform: uppercase;
+  color: #09f;
+}
+header .header-text p {
+  letter-spacing: 2px;
+}
+header .header-shadow {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+main .about-us {
+  margin: 40px auto;
+}
+main .about-us p {
+  padding-bottom: 10px;
+}
+main .products {
+  margin: 60px auto;
+}
+main .products .product {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+main .products .first-product {
+  background-image: url("/projekt/responsywna/img/chilidren-small.jpg");
+}
+main .products .second-product {
+  background-image: url("/projekt/responsywna/img/woman-small.jpg");
+}
+main .products .third-product {
+  background-image: url("/projekt/responsywna/img/keyboard-small.jpg");
+}
+main .products .fourth-product {
+  background-image: url("/projekt/responsywna/img/laptop-small.jpg");
+}
+
+@media (min-width: 768px) {
+  nav .burger-icon {
+    display: none;
+  }
+  nav .nav-item {
+    display: block;
+  }
+  nav a {
+    padding: 0 40px;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: royalblue;
+  }
+}/*# sourceMappingURL=responsywan.css.map */
