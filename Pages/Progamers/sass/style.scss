@@ -80,7 +80,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('/projekt2/strona/img/playstation-1845880_640.jpg');
+		background-image: url('../img/playstation-1845880_640.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -140,7 +140,7 @@ header {
 
 .aboutus-hero {
 	position: relative;
-	background-image: url('/projekt2/strona/img/technology-small.jpg');
+	background-image: url('../img/technology-small.jpg');
 	background-position: center;
 	background-size: cover;
 	color: $light-gray;
@@ -225,7 +225,7 @@ header {
 }
 .team {
 	position: relative;
-	background-image: url('/projekt2/strona/img/team/meeting-room-828547_1920.jpg');
+	background-image: url('../img/team/meeting-room-828547_1920.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
@@ -291,7 +291,7 @@ header {
 
 .contact {
 	position: relative;
-	background-image: url('/projekt2/strona/img/skyline-1869214_1920.jpg');
+	background-image: url('../img/skyline-1869214_1920.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
@@ -368,7 +368,7 @@ header {
 
 	header {
 		.aboutus-hero {
-			background-image: url('/projekt2/strona/img/playstation-1845880_640.jpg');
+			background-image: url('../img/playstation-1845880_640.jpg');
 		}
 	}
 	.prices {
@@ -381,7 +381,7 @@ header {
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
-			background-image: url('/projekt2/strona/img/playstation-1845880_1920.jpg');
+			background-image: url('../img/gaming-2259191_1920.jpg');
 		}
 	}
 }
